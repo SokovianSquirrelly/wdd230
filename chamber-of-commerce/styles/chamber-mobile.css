@@ -48,6 +48,14 @@ img {
     margin-right: auto;
 }
 
+li a {
+    text-decoration: none;
+}
+
 p, li {
     font-family: 'Nunito', sans-serif;
+}
+
+ul li {
+    list-style-type: none;
 }
