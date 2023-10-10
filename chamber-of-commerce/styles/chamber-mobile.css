@@ -1,61 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Russo+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Russo+One&display=swap");
 
 #color-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #color-1 {
-    background-color: #0081af;
+  background-color: #0081af;
 }
 
 #color-2 {
-    background-color: #00abe7;
+  background-color: #00abe7;
 }
 
 #color-3 {
-    background-color: #2dc7ff;
+  background-color: #2dc7ff;
 }
 
 #color-4 {
-    background-color: #ead2ac
+  background-color: #ead2ac;
 }
 
 #color-5 {
-    background-color: #eaba6b;
+  background-color: #eaba6b;
+}
+
+#hero a {
+    font-size: 2em;
+    font-family: "Russo One", sans-serif;
 }
 
 .display-color {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Russo One', sans-serif;
+a {
+  text-decoration: none;
 }
 
-h1, h2, h3, h4, p {
-    text-align: center;
+a,
+li,
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Russo One", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  text-align: center;
 }
 
 header {
-    background-color: #0081af;
+  background-color: #0081af;
 }
 
 img {
-    max-width: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-li a {
-    text-decoration: none;
+nav {
+  background-color: #0081af;
 }
 
-p, li {
-    font-family: 'Nunito', sans-serif;
+nav a {
+  color: white;
 }
 
 ul li {
-    list-style-type: none;
+  list-style-type: none;
 }

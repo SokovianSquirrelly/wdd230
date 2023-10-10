@@ -5,6 +5,10 @@
         margin-right: auto;
     }
 
+    #hero a {
+        font-size: 3em;
+    }
+
     nav ul{
         display: flex;
         justify-content: space-around;
