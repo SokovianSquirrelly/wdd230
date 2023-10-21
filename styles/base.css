@@ -2,91 +2,105 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Metal+Mania&family=PT+Sans&display=swap");
 
+#hero {
+  position: relative;
+}
+
 #hero img {
-    min-width: 100%;
-    max-width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+#hero-text {
+  position: absolute;
+  top: 10%;
+  right: 5%;
 }
 
 #info ul {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 25px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
 }
 
 #info ul li {
-    text-align: center;
+  text-align: center;
 }
 
 #map iframe {
-    width: 100%;
+  width: 100%;
 }
 
 .card {
-    margin: 20px auto;
-    display: block;
-    border: 10px solid black;
-    border-radius: 3%;
-    background-color: #d6c274;
+  margin: 20px auto;
+  display: block;
+  border: 10px solid black;
+  border-radius: 3%;
+  background-color: #d6c274;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    background-color: #2863c9;
+  background-color: #2863c9;
 }
 
 footer {
-    background-color: #0e0a30;
+  background-color: #0e0a30;
 }
 
 footer p {
-    color: white;
+  color: white;
 }
 
-h1, h2, h3 {
-    font-family: "Metal Mania", cursive;
-    text-align: center;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Metal Mania", cursive;
+  text-align: center;
 }
 
 header img {
-    border: 10px solid black;
-    border-radius: 5%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
+  border: 10px solid black;
+  border-radius: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
 }
 
-li, p {
-    font-family: Arial, Helvetica, sans-serif;
+li,
+p {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
-    background-color: #0e0a30;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: center;
+  background-color: #0e0a30;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 nav a {
-    color: white;
+  color: white;
 }
 nav a:hover {
-    background-color: #7ab1e6;
-    color: black;
-    
+  background-color: #7ab1e6;
+  color: black;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    padding: 5px;
+  padding: 5px;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }

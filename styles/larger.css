@@ -1,20 +1,50 @@
 /* This css file is for desktop view. */
 
 @media only screen and (min-width: 769px) {
-    #home-cards {
-        display: flex;
-    }
+  #hero-text {
+    position: absolute;
+    left: 6%;
+    top: 1%;
+    right: auto;
+    background-color: rgba(255,255,255,0.5);
+  }
 
-    .card {
-       width: 45%;
-    }
+  #hero-text:before {
+    background-color: rgba(0, 40, 104, 0.8);
+    height: 33%;
+    width: 100%;
+    content: "";
+    position: absolute;
+  }
 
-    h1 {
-        font-size: 60px;
-    }
+  #hero-text:after {
+    background-color: rgba(0, 40, 104, 0.8);
+    height: 33%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 67%;
+  }
 
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-    }
+  #hero-text h4 {
+    font-size: 2.5em;
+    padding: 15px;
+  }
+
+  #home-cards {
+    display: flex;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
 }

@@ -10,10 +10,12 @@
     <meta name="author" />
   </head>
   <body>
+
     <header>
       <img src="images/profile_img_new.jpg" alt="Profile Image" />
       <h1>Collin Squires</h1>
     </header>
+
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -22,12 +24,28 @@
         <li><a href="#">Form</a></li>
       </ul>
     </nav>
+
     <main>
-      <picture id="hero">
-        <source srcset="images/denver-temple-small.webp" media="(max-width: 500px)">
-        <img src="images/denver-temple-large.jpg" alt="Denver Colorado Temple">
-      </picture>
+
+      <section id="hero">
+        <picture>
+          <source
+            srcset="images/denver-temple-small.webp"
+            media="(max-width: 500px)"
+          />
+          <img
+            src="images/denver-temple-large-cropped.webp"
+            alt="Denver Colorado Temple"
+          />
+        </picture>
+        <div id="hero-text">
+          <div id="flag-background"></div>
+          <h4>Denver Colorado Temple</h4>
+        </div>
+      </section>
+
       <h2>WDD 230: Web Frontend Development</h2>
+
       <section id="home-cards">
         <section class="card">
           <h3>Learning Activities</h3>
@@ -52,10 +70,14 @@
             <li>76&deg; F</li>
             <li>Rain?</li>
             <li></li>
-            <li>You've visited this page <span id="number-of-visits"></span> time(s).</li>
+            <li>
+              You've visited this page
+              <span id="number-of-visits"></span> time(s).
+            </li>
           </ul>
         </section>
       </section>
+
       <section id="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23077.894534143932!2d-112.03406406773775!3d43.69523460037788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53546ba90c7d4da1%3A0xfd067c54532303e2!2sLewisville%2C%20ID%2083431!5e0!3m2!1sen!2sus!4v1697553133607!5m2!1sen!2sus"
@@ -67,7 +89,9 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
+
     </main>
+
     <footer>
       <p>
         &copy;<span id="year"></span> | Collin Squires | Rexburg, Idaho, United
@@ -75,7 +99,9 @@
       </p>
       <p>Last Modified - <span id="lastModified"></span></p>
     </footer>
+
     <script src="scripts/getDates.js"></script>
     <script src="scripts/numVisits.js"></script>
+
   </body>
 </html>
