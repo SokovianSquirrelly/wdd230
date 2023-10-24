@@ -1,0 +1,64 @@
+:root {
+    --border: 1px solid black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: navy;
+}
+
+a:hover {
+  color: purple;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  width: 760px;
+  background-color: #eee;
+}
+
+.datatable {
+  width: 200px;
+  margin-top: 2rem;
+  border: var(--border);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.row:nth-child(even)
+{
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+.row:last-child {
+  background-color: darkgray;
+}
+
+.col {
+  padding: 10px;
+}
+
+.col:last-child {
+    border-left: var(--border);
+}
