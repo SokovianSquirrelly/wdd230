@@ -1,0 +1,43 @@
+caption {
+  color: black;
+  caption-side: bottom;
+  padding: 4px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid #333333;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+tbody {
+  background-color: white;
+  color: black;
+}
+
+tbody td:first-child {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.column-head {
+  background-color: #333333;
+}
