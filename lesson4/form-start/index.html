@@ -36,13 +36,17 @@
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>Applicant Information</legend>
-          <label>First Name* <input type="text" name="fname" required /></label>
-          <label>Last Name* <input type="text" name="lname" required /></label>
-          <label
+          <label class="top"
+            >First Name* <input type="text" name="fname" required
+          /></label>
+          <label class="top"
+            >Last Name* <input type="text" name="lname" required
+          /></label>
+          <label class="top"
             >Phone Number
             <input type="tel" name="phone" placeholder="1235551234"
           /></label>
-          <label
+          <label class="top"
             >Email*
             <input
               type="email"
@@ -50,7 +54,7 @@
               placeholder="someone@gmail.com"
               required
           /></label>
-          <label
+          <label class="top"
             >Website <input type="url" name="url" placeholder="https://"
           /></label>
         </fieldset>
@@ -58,57 +62,60 @@
         <fieldset>
           <legend>Course Information</legend>
           <div>Audience</div>
-          <label
+          <label class="sbs"
             ><input
               type="radio"
               name="audience"
               value="beginner"
-            />Beginner</label
+            /> Beginner</label
           >
-          <label
+          <label class="sbs"
             ><input
               type="radio"
               name="audience"
               value="intermediate"
-            />Intermediate</label
+            /> Intermediate</label
           >
-          <label
+          <label class="sbs"
             ><input
               type="radio"
               name="audience"
               value="advanced"
-            />Advanced</label
+            /> Advanced</label
           >
 
           <div>Software Needed</div>
-          <label
-            ><input type="checkbox" name="editing" value="yes" />Photo
-            Editing</label
+
+          <label class="sbs"
+            ><input type="checkbox" name="code" value="yes" /> Coding</label
           >
-          <label><input type="checkbox" name="code" value="yes" />Coding</label>
-          <label
+          <label class="sbs"
+          ><input type="checkbox" name="client" value="yes" /> FTP
+          Client</label
+        >
+          <label class="sbs"
+          ><input type="checkbox" name="editing" value="yes" /> Photo
+          Editing</label
+        >
+          <label class="sbs"
             ><input
               type="checkbox"
               name="process"
               value="yes"
-            />Preprocessor</label
-          >
-          <label
-            ><input type="checkbox" name="client" value="yes" />FTP
-            Client</label
+            /> Preprocessor</label
           >
         </fieldset>
 
         <fieldset>
           <legend>Funding</legend>
-          <label
+          <label class="top"
             >Anticipated Completion Date
             <input type="date" name="completion-date"
           /></label>
-          <label
+          <label class="top"
             >Course Subject
             <select name="subject">
-              <option value="">Please Select</option>
+              <option value="">Please Select &#9662</option>
               <option value="software">Software Development</option>
               <option value="creative">Creative Professional</option>
               <option value="info">Information Technology</option>
@@ -120,11 +127,12 @@
             </select>
           </label>
 
-          <label>How Many Authors <input type="number" name="authors" /></label>
+          <label class="top"
+            >How Many Authors <input type="number" name="authors"
+          /></label>
         </fieldset>
 
-        <input type="submit" value="Propose My Course" />
-        
+        <input type="submit" value="Propose My Course" class="submitBtn" />
       </form>
     </main>
 
