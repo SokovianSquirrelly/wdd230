@@ -1,0 +1,28 @@
+{
+    "lastName": "Dynamite",
+    "moveInDate": "2004-06-11",
+    "numberOfIndividuals": 3,
+    "bishopricVisit": true,
+    "familyMembers": [
+        {
+            "name": "Carlinda Dynamite",
+            "gender": "Female",
+            "dateOfBirth": "1949-03-03"
+        },
+        {
+            "name": "Kip Dynamite",
+            "gender": "Male",
+            "dateOfBirth": "1976-06-23"
+        },
+        {
+            "name": "Napolean Dynamite",
+            "gender": "Male",
+            "dateOfBirth": "1977-10-26"
+        },
+        {
+            "name": "Rico Dynamite",
+            "gender": "Male",
+            "dateOfBirth": "1957-06-17"
+        }
+    ]
+}
