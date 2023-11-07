@@ -95,7 +95,7 @@ form div {
 
 form label.top input,
 form label.top select {
-  -webkit-appearance: none;
+  appearance: none;
   display: block;
   font-size: 1rem;
   border: solid 1px #999;
@@ -129,7 +129,7 @@ form label.top input:required {
 }
 
 form label.top input:required:valid {
-  border-left: green solid px;
+  border-left: green solid 6px;
 }
 
 /*----------- FOOTER --------------*/
