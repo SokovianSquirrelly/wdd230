@@ -32,12 +32,10 @@
   }
 
   #home-cards {
-    display: flex;
+    grid-template-columns: 3fr 2fr;
   }
+  
 
-  .card {
-    width: 45%;
-  }
 
   h1 {
     font-size: 60px;
