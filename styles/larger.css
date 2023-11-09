@@ -1,6 +1,15 @@
 /* This css file is for desktop view. */
 
 @media only screen and (min-width: 769px) {
+
+  #menu {
+    display: none;
+  }
+
+  .home-nav {
+    display: block;
+  }
+
   #hero-text {
     position: absolute;
     left: 6%;
@@ -34,8 +43,6 @@
   #home-cards {
     grid-template-columns: 3fr 2fr;
   }
-  
-
 
   h1 {
     font-size: 60px;

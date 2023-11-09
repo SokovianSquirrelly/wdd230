@@ -2,6 +2,35 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Metal+Mania&family=PT+Sans&display=swap");
 
+#menu {
+  font-size: 1.5rem;
+  border: none;
+  padding: 3px 7px 6px;
+  background-color: #2863c9;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-nav {
+  display: none;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+}
+
 #hero {
   position: relative;
 }
