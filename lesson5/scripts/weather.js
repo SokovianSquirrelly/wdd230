@@ -2,10 +2,10 @@ const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
-const url =
-  "https://api.openweathermap.org/data/3.0/onecall?lat=49.75&lon=6.64&appid=c2448f82676f1c51f8aad097f7b429bc";
+let lastTimestamp = 0;
 
-// TODO: Add a way to check the timestamp of when the weather was last checked and do not fetch again for at least an hour.
+const url =
+  "https://api.openweathermap.org/data/2.5/weather?lat=49.74&lon=6.64&appid=c2448f82676f1c51f8aad097f7b429bc&units=imperial";
 
 async function apiFetch() {
   try {
@@ -13,7 +13,8 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       console.log(data);
-      // displayResults(data);
+      localStorage.setItem("recentWeatherData", JSON.stringify(data));
+      displayResults(data);
     } else {
       throw Error(await response.text());
     }
@@ -23,12 +24,31 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-  currentTemp.innerHTML = `${data.___}&deg;F`;
-  const iconsrc = `https://openweathermap.org/img/w/${___}.png`;
-  let desc = data.weather[0].____;
-  weatherIcon.setAttribute("__", ____);
-  weatherIcon.setAttribute("__", ____);
+  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let desc = data.weather[0].main;
+  weatherIcon.setAttribute("src", iconsrc);
+  weatherIcon.setAttribute("alt", data.weather[0].description);
   captionDesc.textContent = `${desc}`;
 }
 
-apiFetch();
+function checkTime() {
+  if (localStorage.getItem("visitTimestamp")) {
+    lastTimestamp = parseInt(localStorage.getItem("visitTimestamp"));
+    currentTimestamp = Date.now();
+    timeDifference = currentTimestamp - lastTimestamp;
+
+    if (timeDifference > 3600000) {
+      lastTimestamp = currentTimestamp;
+      localStorage.setItem("visitTimestamp", lastTimestamp);
+      apiFetch();
+    } else {
+      displayResults(JSON.parse(localStorage.getItem("recentWeatherData")));
+    }
+  } else {
+    localStorage.setItem("visitTimestamp", Date.now());
+    apiFetch();
+  }
+}
+
+checkTime();
