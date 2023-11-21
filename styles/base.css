@@ -52,8 +52,8 @@
   grid-template-columns: 1fr;
 }
 
-.card {
-  width: 95%;
+.lessonLine {
+  margin: .5em;
 }
 
 #info ul {
@@ -71,6 +71,7 @@
 }
 
 .card {
+  width: 95%;
   margin: 5px auto;
   display: block;
   border: 10px solid black;

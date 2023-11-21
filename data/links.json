@@ -1,0 +1,107 @@
+{
+    "weeks" : 
+    [
+        {
+            "week" : "Week 1",
+            "links" : 
+            [
+                {
+                    "url" : "lesson1/holy-grail.html",
+                    "title" : "Page Layout Review"
+                },
+                {
+                    "url" : "lesson1/applied-js.html",
+                    "title" : "Applied Javascript"
+                },
+                {
+                    "url" : "lesson1/media-query.html",
+                    "title" : "CSS Media Queries"
+                }
+            ]
+        },
+        {
+            "week" : "Week 2",
+            "links" : 
+            [
+                {
+                    "url" : "lesson2/design.html",
+                    "title" : "Design Principles"
+                },
+                {
+                    "url" : "lesson2/hamburger-menu.html",
+                    "title" : "Responsive Hamburger Menu"
+                },
+                {
+                    "url" : "lesson2/bom.html",
+                    "title" : "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "week" : "Week 3",
+            "links" : 
+            [
+                {
+                    "url" : "lesson3/images/landscape_cropped_shrunk.webp",
+                    "title" : "WebP"
+                },
+                {
+                    "url" : "lesson3/lazyload.html",
+                    "title" : "Lazy Load"
+                },
+                {
+                    "url" : "lesson3/responsive-images.html",
+                    "title" : "Responsive Images"
+                },
+                {
+                    "url" : "#",
+                    "title" : "Web Storage API (Coming Soon)"
+                }
+            ]
+        },
+        {
+            "week" : "Week 4",
+            "links" : 
+            [
+                {
+                    "url" : "lesson4/pseudo-classes.html",
+                    "title" : "Pseudo-classes"
+                },
+                {
+                    "url" : "lesson4/images/combinators-screenshot.webp",
+                    "title" : "CSS Combinators"
+                },
+                {
+                    "url" : "lesson4/table-build.html",
+                    "title" : "HTML Tables"
+                },
+                {
+                    "url" : "lesson4/form-start/index.html",
+                    "title" : "HTML Forms"
+                }
+            ]
+        },
+        {
+            "week" : "Week 5",
+            "links" : 
+            [
+                {
+                    "url" : "lesson5/pseudo-elements.html",
+                    "title" : "Pseudo-elements"
+                },
+                {
+                    "url" : "lesson5/new-ward-members.json",
+                    "title" : "Working with JSON Data"
+                },
+                {
+                    "url" : "lesson5/prophets.html",
+                    "title" : "The Fetch API"
+                },
+                {
+                    "url" : "lesson5/weather.html",
+                    "title" : "Third-party Weather API"
+                }
+            ]
+        }
+    ]
+}

@@ -4,12 +4,12 @@ const captionDesc = document.querySelector("#weather");
 
 let lastTimestamp = 0;
 
-const url =
+const weatherUrl =
   "https://api.openweathermap.org/data/2.5/weather?lat=43.69&lon=-112.01&appid=c2448f82676f1c51f8aad097f7b429bc&units=imperial";
 
 async function apiFetch() {
   try {
-    const response = await fetch(url);
+    const response = await fetch(weatherUrl);
     if (response.ok) {
       const data = await response.json();
       console.log(data);
