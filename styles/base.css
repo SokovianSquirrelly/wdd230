@@ -2,11 +2,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Metal+Mania&family=PT+Sans&display=swap");
 
+
+/* Hamburger Menu */
 #menu {
   font-size: 1.5rem;
   border: none;
   padding: 3px 7px 6px;
-  background-color: #2863c9;
+  background-color: transparent;
   color: white;
   position: absolute;
   top: 1rem;
@@ -31,6 +33,27 @@
   flex-direction: column;
 }
 
+/* Dark Mode */
+#dark-mode {
+  position: absolute;
+  top: 4em;
+  right: .5em;
+  font-size: 1.5em;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+#dark-mode::before {
+  content: "🕶️"
+}
+
+#dark-mode.dark::before {
+  content: "🔆";
+}
+
+/* Hero Image */
+
 #hero {
   position: relative;
 }
@@ -46,6 +69,8 @@
   top: 10%;
   right: 5%;
 }
+
+/* Main */
 
 #home-cards {
   display: grid;
@@ -87,6 +112,14 @@ body {
   background-color: #2863c9;
 }
 
+body.dark {
+  background-color: #0e0a30;
+}
+
+body.dark h1, body.dark h2 {
+  color: white;
+}
+
 footer {
   background-color: #0e0a30;
 }
@@ -107,12 +140,14 @@ header {
   display: flex;
 }
 
-header img {
+#profile-img {
   border: 10px solid black;
   border-radius: 5%;
   display: block;
   margin-left: 5px;
   margin-right: 10px;
+  margin-top: .5em;
+  margin-bottom: .5em;
   max-width: 30%;
 }
 

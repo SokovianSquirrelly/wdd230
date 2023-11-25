@@ -6,6 +6,10 @@
     display: none;
   }
 
+  #dark-mode {
+    top: 1em;
+  }
+
   .home-nav {
     display: block;
   }
