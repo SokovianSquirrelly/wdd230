@@ -54,8 +54,8 @@
                     "title" : "Responsive Images"
                 },
                 {
-                    "url" : "#",
-                    "title" : "Web Storage API (Coming Soon)"
+                    "url" : "lesson3/bom-local-storage.html",
+                    "title" : "Web Storage API"
                 }
             ]
         },
