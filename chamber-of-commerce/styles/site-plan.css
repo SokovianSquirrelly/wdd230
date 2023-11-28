@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  text-align: center;
+}
+
+.mini-header {
+  margin: 0.5em;
+}
+
+#color-grid {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  border: 1px solid black;
+}
+
+.display-color p {
+  padding: 1em;
+}
+
+#color-1 {
+  background-color: #0081af;
+}
+
+#color-2 {
+  background-color: #00abe7;
+}
+
+#color-3 {
+  background-color: #2dc7ff;
+}
+
+#color-4 {
+  background-color: #ead2ac;
+}
+
+#color-5 {
+  background-color: #eaba6b;
+}
+
+@media only screen and (min-width: 32em) {
+  #color-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 60%;
+  }
+}
