@@ -23,23 +23,23 @@ p {
 }
 
 #color-1 {
-  background-color: #0081af;
+  background-color: var(--cerulean);
 }
 
 #color-2 {
-  background-color: #00abe7;
+  background-color: var(--picton-blue);
 }
 
 #color-3 {
-  background-color: #2dc7ff;
+  background-color: var(--vivid-sky-blue);
 }
 
 #color-4 {
-  background-color: #ead2ac;
+  background-color: var(--wheat);
 }
 
 #color-5 {
-  background-color: #eaba6b;
+  background-color: var(--earth-yellow);
 }
 
 @media only screen and (min-width: 32em) {

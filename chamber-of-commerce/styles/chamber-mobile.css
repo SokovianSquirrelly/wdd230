@@ -1,13 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Russo+One&display=swap");
 
-*{
-  margin: 0;
-  padding: 0;
+:root {
+  --paragraph-font: "Nunito", sans-serif;
+  --header-font: "Russo One", sans-serif;
+
+  --cerulean: #0081af;
+  --picton-blue: #00abe7;
+  --vivid-sky-blue: #2dc7ff;
+  --wheat: #ead2ac;
+  --earth-yellow: #eaba6b;
 }
 
 #hero a {
-    font-size: 2em;
-    font-family: "Russo One", sans-serif;
+  font-size: 2em;
+  font-family: var(--header-font);
+  margin: 4em;
+  padding: 0.5em;
+  color: black;
+  background-color: var(--picton-blue);
 }
 
 a {
@@ -17,20 +27,15 @@ a {
 a,
 li,
 p {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--paragraph-font);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Russo One", sans-serif;
+  font-family: var(--header-font);
   margin: 0.5em;
-}
-
-header {
-  background-color: #0081af;
-  padding: .75em;
 }
 
 hr {
@@ -45,18 +50,24 @@ img {
   margin-right: auto;
 }
 
-nav {
-  background-color: #0081af;
-}
-
-nav a {
-  color: white;
-}
-
 ul li {
   list-style-type: none;
 }
 
 li {
   margin-left: 0.5em;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.home-section {
+  border: 3px solid black;
+  margin: 1em;
+}
+
+.event-ad {
+  max-width: 90%;
 }

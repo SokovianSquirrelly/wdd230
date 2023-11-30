@@ -8,13 +8,20 @@
       name="description"
       content="WDD 230 - Lewisville Chamber of Commerce"
     />
+    <meta name="author" content="Collin Squires" />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/chamber-mobile.css" />
     <link rel="stylesheet" href="styles/chamber-desktop.css" />
-    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/header-footer.css" />
+    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <header>
-        <h1>Lewisville, Idaho</h1>
+      <img
+        src="images/fields.png"
+        alt="Retrieved from https://www.flaticon.com/free-icons/farm"
+      />
+      <h1>Lewisville, Idaho</h1>
     </header>
     <nav>
       <ul>
@@ -33,10 +40,33 @@
         <a href="#">Join now!</a>
       </section>
       <h1>Lewisville Chamber of Commerce</h1>
-      <section id="headline-event"></section>
-      <section id="weather"></section>
-      <section id="calendar"></section>
+      <section class="home-section" id="current-events">
+        <h3>Current Events</h3>
+      </section>
+      <section class="home-section" id="weather">
+        <h3>Weather</h3>
+      </section>
+      <section class="home-section" id="spotlight-ads">
+        <h3>Spotlight Ads</h3>
+        <section id="ads-body">
+          <img
+            class="event-ad"
+            src="images/placeholder.png"
+            alt="advertising placeholder"
+          />
+          <img
+            class="event-ad"
+            src="images/placeholder.png"
+            alt="advertising placeholder"
+          />
+        </section>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>Collin Squires - WDD 230</p>
+      <p>(208) 407-2603</p>
+      <p>Last Modified - <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
   </body>
 </html>

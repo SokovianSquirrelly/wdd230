@@ -1,0 +1,62 @@
+header {
+  background-color: var(--picton-blue);
+  padding: 0.75em;
+}
+
+header img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 100;
+}
+
+nav {
+  background-color: var(--cerulean);
+}
+
+nav li {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+nav a {
+  color: white;
+  padding: 1em;
+  border-radius: 15%;
+}
+
+nav a:hover {
+  background-color: var(--earth-yellow);
+  color: black;
+}
+
+footer {
+  background-color: var(--picton-blue);
+  padding: 1em;
+}
+
+@media only screen and (min-width: 32em) {
+  header {
+    display: flex;
+  }
+
+  header img {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: auto;
+    margin-bottom:auto;
+  }
+
+  header h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
