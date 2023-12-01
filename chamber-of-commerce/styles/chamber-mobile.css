@@ -11,15 +11,6 @@
   --earth-yellow: #eaba6b;
 }
 
-#hero a {
-  font-size: 2em;
-  font-family: var(--header-font);
-  margin: 4em;
-  padding: 0.5em;
-  color: black;
-  background-color: var(--picton-blue);
-}
-
 a {
   text-decoration: none;
 }
@@ -63,6 +54,17 @@ ul {
   margin: 0;
 }
 
+/****HOME PAGE****/
+
+#hero a {
+  font-size: 2em;
+  font-family: var(--header-font);
+  margin: 4em;
+  padding: 0.5em;
+  color: black;
+  background-color: var(--picton-blue);
+}
+
 .home-section {
   border: 3px solid black;
   margin: 1em;
@@ -71,3 +73,5 @@ ul {
 .event-ad {
   max-width: 90%;
 }
+
+/****DISCOVER****/

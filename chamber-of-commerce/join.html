@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join | Lewisville Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="WDD 230 - Lewisville Chamber of Commerce"
+    />
+    <meta name="author" content="Collin Squires" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/chamber-mobile.css" />
+    <link rel="stylesheet" href="styles/chamber-desktop.css" />
+    <link rel="stylesheet" href="styles/header-footer.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/fields.png"
+        alt="Retrieved from https://www.flaticon.com/free-icons/farm"
+      />
+      <h1>Lewisville, Idaho</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form action="thankyou.html">
+        <label
+          >First Name* <input type="text" name="fName" id="fName" required />
+        </label>
+        <label
+          >Last Name* <input type="text" name="lName" id="lName" required />
+        </label>
+        <label
+          >Job Title
+          <input type="text" name="title" id="title" pattern="[A-z\s-]{7,}"
+        /></label>
+        <label
+          >Email*
+          <input
+            type="email"
+            ,
+            name="email"
+            ,
+            id="email"
+            required
+            placeholder="someone@example.com"
+        /></label>
+        <label
+          >Phone Number* <input type="tel" required name="phone" id="phone"
+        /></label>
+        <label
+          >Business/Organization Name*
+          <input type="text" required name="business" id="business"
+        /></label>
+        <label>
+          <input type="radio" name="membership" value="non-profit" />NP
+          Membership
+        </label>
+        <label>
+          <input type="radio" name="membership" value="bronze" />Bronze
+          Membership
+        </label>
+        <label>
+          <input type="radio" name="membership" value="silver" />Silver
+          Membership
+        </label>
+        <label>
+          <input type="radio" name="membership" value="gold" />Gold Membership
+        </label>
+        <label>Business Description <textarea name="description" id="description" cols="30" rows="10"></textarea></label>
+        <input type="hidden" id="timestamp" name="timestamp">
+        <input type="submit" value="Publish My Business">
+      </form>
+    </main>
+    <footer>
+      <p>Collin Squires - WDD 230</p>
+      <p>(208) 407-2603</p>
+      <p>Last Modified - <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+  </body>
+</html>
