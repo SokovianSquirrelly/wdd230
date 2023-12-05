@@ -31,20 +31,53 @@
         <li><a href="join.html">Join</a></li>
       </ul>
     </nav>
-    <main>
+    <main id="join-main">
+      <section id="benefits">
+        <ul>
+          <h3>Non-Profit Membership</h3>
+          <li>Free of Charge</li>
+          <li>Perfect for charity organizations like food banks!</li>
+          <li>Displays current weather on home page</li>
+
+          <br />
+
+          <h3>Bronze Membership</h3>
+          <li>$9.99/month</li>
+          <li>Free business trainings/clinics offered!</li>
+
+          <br />
+
+          <h3>Silver Membership</h3>
+          <li>$19.99/month</li>
+          <li>Discounts at special events!</li>
+          <li>Your advertisements will be very noticable!</li>
+
+          <br />
+
+          <h3>Gold Membership</h3>
+          <li>$29.99/month</li>
+          <li>Your advertisements will be the spotlight!</li>
+          <li>VIP treatment at special events, including MASSIVE discounts!</li>
+        </ul>
+      </section>
       <form action="thankyou.html">
-        <label
-          >First Name* <input type="text" name="fName" id="fName" required />
+        <label class="top"
+          >First Name<span class="required-field">*</span
+          ><input type="text" name="fName" id="fName" required />
         </label>
-        <label
-          >Last Name* <input type="text" name="lName" id="lName" required />
+
+        <label class="top"
+          >Last Name<span class="required-field">*</span
+          ><input type="text" name="lName" id="lName" required />
         </label>
-        <label
+
+        <label class="top"
           >Job Title
           <input type="text" name="title" id="title" pattern="[A-z\s-]{7,}"
         /></label>
-        <label
-          >Email*
+
+        <label class="top"
+          >Email<span class="required-field">*</span>
           <input
             type="email"
             ,
@@ -54,31 +87,87 @@
             required
             placeholder="someone@example.com"
         /></label>
-        <label
-          >Phone Number* <input type="tel" required name="phone" id="phone"
+
+        <label class="top"
+          >Phone Number<span class="required-field">*</span
+          ><input type="tel" required name="phone" id="phone"
         /></label>
-        <label
-          >Business/Organization Name*
+
+        <label class="top"
+          >Business/Organization Name<span class="required-field">*</span>
           <input type="text" required name="business" id="business"
         /></label>
-        <label>
+
+        <label
+          ><b>Membership Type</b>
+          <button id="info-button">What does this mean?</button>
+          <ul id="membership-info-mobile">
+            <ul>
+              <b>Non-Profit Membership</b>
+              <li>Free of Charge</li>
+              <li>Perfect for charity organizations like food banks!</li>
+              <li>Displays current weather on home page</li>
+            </ul>
+            <ul>
+              <b>Bronze Membership</b>
+              <li>$9.99/month</li>
+              <li>Free business trainings/clinics offered!</li>
+            </ul>
+            <ul>
+              <b>Silver Membership</b>
+              <li>$19.99/month</li>
+              <li>Discounts at special events!</li>
+              <li>Your advertisements will be very noticable!</li>
+            </ul>
+            <ul>
+              <b>Gold Membership</b>
+              <li>$29.99/month</li>
+              <li>Your advertisements will be the spotlight!</li>
+              <li>
+                VIP treatment at special events, including MASSIVE discounts!
+              </li>
+            </ul>
+          </ul></label
+        >
+
+        <label class="sbs">
           <input type="radio" name="membership" value="non-profit" />NP
           Membership
         </label>
-        <label>
+
+        <label class="sbs">
           <input type="radio" name="membership" value="bronze" />Bronze
           Membership
         </label>
-        <label>
+
+        <label class="sbs">
           <input type="radio" name="membership" value="silver" />Silver
           Membership
         </label>
-        <label>
+
+        <label class="sbs">
           <input type="radio" name="membership" value="gold" />Gold Membership
         </label>
-        <label>Business Description <textarea name="description" id="description" cols="30" rows="10"></textarea></label>
-        <input type="hidden" id="timestamp" name="timestamp">
-        <input type="submit" value="Publish My Business">
+
+        <label class="top"
+          >Business Description
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </label>
+
+        <p>
+          <b>
+            The red asterisks (<span class="required-field">*</span>) indicate a
+            required field.
+          </b>
+        </p>
+
+        <input type="hidden" id="timestamp" name="timestamp" />
+        <input type="submit" value="Publish My Business" id="submitButton" />
       </form>
     </main>
     <footer>
@@ -87,5 +176,6 @@
       <p>Last Modified - <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/expandMembershipInfo.js"></script>
   </body>
 </html>

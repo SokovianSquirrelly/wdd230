@@ -75,3 +75,80 @@ ul {
 }
 
 /****DISCOVER****/
+
+/****JOIN****/
+
+#benefits {
+  display: none;
+}
+
+label {
+  margin: 1em;
+  font-family: var(--paragraph-font);
+}
+
+.top {
+  display: block;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.required-field {
+  color: red;
+}
+
+.top input,
+textarea {
+  display: block;
+  height: 44px;
+  width: 90%;
+  padding: 0.75rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#info-button {
+  margin-left:2em;
+  border: none;
+  background-color: var(--picton-blue);
+  color: white;
+  padding: 1em;
+  border-radius: 15px;
+}
+
+#membership-info-mobile {
+  display:none;
+}
+
+#membership-info-mobile.open {
+  display: block;
+  padding: 1em;
+  background-color: var(--earth-yellow);
+  border-radius: 15px;
+}
+
+.sbs {
+  display: flex;
+}
+
+#submitButton {
+  width: 100%;
+  margin-bottom: 1em;
+  border: none;
+  background-color: var(--cerulean);
+  padding: 1.6em;
+  color: white;
+  font-family: var(--paragraph-font);
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+#submitButton:hover {
+  background-color: var(--wheat);
+  color: black;
+}
+
+#thankyou-main h1, #thankyou-main h3 {
+  text-align: center;
+  padding-bottom: 2em;
+}

@@ -16,4 +16,33 @@
   .event-ad {
     max-width: 500px;
   }
+
+  /****JOIN****/
+  #join-main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  #benefits {
+    display:block;
+    background-color: var(--earth-yellow);
+  }
+
+  #benefits h3 {
+    text-align: center;
+  }
+
+  #benefits li {
+    padding: 0.5em;
+    font-weight: bold;
+  }
+
+  form {
+    max-width: 90%;
+    margin-left: 1em;
+  }
+
+  #info-button {
+    display: none;
+  }
 }
