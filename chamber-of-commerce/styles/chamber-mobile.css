@@ -76,6 +76,22 @@ ul {
 
 /****DISCOVER****/
 
+.discovery-attraction {
+  border: 0.5em solid var(--cerulean);
+  margin: 1em;
+  background-color: var(--wheat);
+  padding: 1em;
+}
+
+.discovery-attraction img {
+  width: 80%;
+}
+
+.discovery-attraction p {
+  text-align: center;
+  font-weight: bold;
+}
+
 /****JOIN****/
 
 #benefits {

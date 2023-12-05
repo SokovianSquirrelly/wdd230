@@ -17,6 +17,22 @@
     max-width: 500px;
   }
 
+  /****DISCOVER****/
+
+  #discover-main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  #discover-sidebar {
+    background-color: var(--earth-yellow);
+  }
+
+  #discover-true {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   /****JOIN****/
   #join-main {
     display: grid;
