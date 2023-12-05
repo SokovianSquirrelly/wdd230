@@ -35,7 +35,7 @@ function displayResults(data) {
 function checkTime() {
   if (localStorage.getItem("visitTimestampHome")) {
     lastTimestamp = parseInt(localStorage.getItem("visitTimestampHome"));
-    currentTimestamp = Date.now();
+    let currentTimestamp = Date.now();
     timeDifference = currentTimestamp - lastTimestamp;
 
     if (timeDifference > 3600000) {

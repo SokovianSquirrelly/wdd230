@@ -76,6 +76,10 @@ ul {
 
 /****DISCOVER****/
 
+#discovery-visits {
+  text-align: center;
+}
+
 .discovery-attraction {
   border: 0.5em solid var(--cerulean);
   margin: 1em;
