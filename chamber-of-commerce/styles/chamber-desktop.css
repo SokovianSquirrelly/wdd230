@@ -38,6 +38,10 @@
     grid-column-end: 3;
   }
 
+  .discovery-attraction:hover {
+    background-color: var(--vivid-sky-blue);
+  }
+
   /****JOIN****/
   #join-main {
     display: grid;
