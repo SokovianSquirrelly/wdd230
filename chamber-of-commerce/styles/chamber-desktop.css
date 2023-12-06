@@ -25,7 +25,20 @@
   }
 
   #discover-sidebar {
+    display: flex;
+    flex-direction: column;
     background-color: var(--earth-yellow);
+  }
+
+  .sidebar-thingy {
+    border: 1em solid var(--cerulean);
+    background-color: var(--wheat);
+    margin: 1em;
+  }
+
+  .sidebar-thingy li {
+    text-align: left;
+    padding: 0.5em;
   }
 
   #discover-true {

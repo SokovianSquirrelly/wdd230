@@ -76,6 +76,10 @@ ul {
 
 /****DISCOVER****/
 
+#discover-sidebar {
+  display: none;
+}
+
 #discovery-visits {
   text-align: center;
 }
