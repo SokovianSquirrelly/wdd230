@@ -57,12 +57,18 @@ ul {
 /****HOME PAGE****/
 
 #hero a {
+  display: block;
+  margin: 1em;
   font-size: 2em;
   font-family: var(--header-font);
-  margin: 4em;
+  text-align: center;
   padding: 0.5em;
   color: black;
   background-color: var(--picton-blue);
+}
+
+#hero a:hover {
+  background-color: var(--wheat);
 }
 
 .home-section {
