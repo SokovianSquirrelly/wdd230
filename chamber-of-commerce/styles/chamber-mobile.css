@@ -76,8 +76,36 @@ ul {
 
 /****DISCOVER****/
 
+#show-sidebar {
+  border: none;
+  background-color: var(--vivid-sky-blue);
+  margin: 1em;
+  padding: 1em;
+  border-radius: 15em;
+}
+
+#show-sidebar::before {
+  content: "Show sidebar content";
+  font-family: var(--paragraph-font);
+}
+
+#show-sidebar.open::before {
+  content: "Hide sidebar content";
+}
+
 #discover-sidebar {
   display: none;
+}
+
+#discover-sidebar.open {
+  display: block;
+}
+
+.sidebar-thingy {
+  display: block;
+  border: 1em solid var(--cerulean);
+  background-color: var(--wheat);
+  margin: 1em;
 }
 
 #discovery-visits {

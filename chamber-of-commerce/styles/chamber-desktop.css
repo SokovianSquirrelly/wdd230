@@ -30,10 +30,8 @@
     background-color: var(--earth-yellow);
   }
 
-  .sidebar-thingy {
-    border: 1em solid var(--cerulean);
-    background-color: var(--wheat);
-    margin: 1em;
+  #show-sidebar {
+    display: none;
   }
 
   .sidebar-thingy li {
