@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    font-family: var(--header-font);
+    font-size: 2em;
+    color: white;
+    padding: 0.5em;
+    background-color: var(--dark-background);
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a:hover {
+    color: black;
+    background-color: var(--card-background);
+}
