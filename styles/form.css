@@ -1,28 +1,58 @@
+form {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 fieldset {
     margin: 2rem 0;
     border: 1px solid black;
     border-radius: 10px;
     padding: 0.5rem 2%;
+    background-color: var(--card-background);
 }
 
 label {
     display: block;
     padding-top: 1rem;
     color: black;
-    font-size: 0.8rem;
+    font-family: var(--paragraph-font);
+}
+
+input {
+    height: 44px;
+    width: 95%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#range-selection {
+    text-align: left;
 }
 
 #rating {
-    width: 180px;
-    margin-bottom: 0;
+    width: 250px;
+    margin: 0 0 0 25px;
 }
 
 #rangevalues {
     display: flex;
     margin: 0 0 0 25px;
-    width: 200px;
+    width: 270px;
 }
 
 #rangevalues option {
     flex: 1 1 auto;
+    font-family: var(--paragraph-font);
+}
+
+#home-submit {
+    border: none;
+    background-color: var(--dark-background);
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 1em;
+    width: 100%;
+    
 }

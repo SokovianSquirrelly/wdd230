@@ -1,9 +1,19 @@
 /* This css file is for mobile view. */
 
 @import url("https://fonts.googleapis.com/css2?family=Metal+Mania&family=PT+Sans&display=swap");
+@import "root.css";
 
+:root {
+  --header-font: "Metal Mania", cursive;
+  --paragraph-font: Arial, Helvetica, sans-serif;
+
+  --site-background: #2863c9;
+  --dark-background: #0e0a30;
+  --card-background: #d6c274;
+}
 
 /* Hamburger Menu */
+
 #menu {
   font-size: 1.5rem;
   border: none;
@@ -21,7 +31,7 @@
 
 #menu.open::before {
   content: "X";
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--paragraph-font);
 }
 
 .home-nav {
@@ -34,6 +44,7 @@
 }
 
 /* Dark Mode */
+
 #dark-mode {
   position: absolute;
   top: 4em;
@@ -101,7 +112,7 @@
   display: block;
   border: 10px solid black;
   border-radius: 3%;
-  background-color: #d6c274;
+  background-color: var(--card-background);
 }
 
 a {
@@ -109,11 +120,11 @@ a {
 }
 
 body {
-  background-color: #2863c9;
+  background-color: var(--site-background);
 }
 
 body.dark {
-  background-color: #0e0a30;
+  background-color: var(--dark-background);
 }
 
 body.dark h1, body.dark h2 {
@@ -121,7 +132,7 @@ body.dark h1, body.dark h2 {
 }
 
 footer {
-  background-color: #0e0a30;
+  background-color: var(--dark-background);
 }
 
 footer p {
@@ -132,7 +143,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Metal Mania", cursive;
+  font-family: var(--header-font);
   text-align: center;
 }
 
@@ -158,12 +169,12 @@ header h1 {
 
 li,
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--paragraph-font);
 }
 
 nav {
-  background-color: #0e0a30;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--dark-background);
+  font-family: var(--paragraph-font);
   text-align: center;
 }
 
