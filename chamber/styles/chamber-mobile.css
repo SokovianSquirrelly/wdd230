@@ -76,6 +76,10 @@ ul {
   margin: 1em;
 }
 
+.home-section {
+  text-align: center;
+}
+
 .event-ad {
   max-width: 90%;
 }
