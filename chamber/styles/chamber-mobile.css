@@ -170,7 +170,7 @@ textarea {
 }
 
 #info-button {
-  margin-left:2em;
+  margin-left: 2em;
   border: none;
   background-color: var(--picton-blue);
   color: white;
@@ -179,7 +179,7 @@ textarea {
 }
 
 #membership-info-mobile {
-  display:none;
+  display: none;
 }
 
 #membership-info-mobile.open {
@@ -210,7 +210,8 @@ textarea {
   color: black;
 }
 
-#thankyou-main h1, #thankyou-main h3 {
+#thankyou-main h1,
+#thankyou-main h3 {
   text-align: center;
   padding-bottom: 2em;
 }
@@ -244,9 +245,13 @@ textarea {
   content: "Show Grid View";
 }
 
-#directory {
+#directory-grid {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+#directory-grid.list-view {
+  display: none;
 }
 
 .business-section {
@@ -297,4 +302,32 @@ textarea {
 
 .business-section ul li {
   margin: 0.5em;
+}
+
+#directory-list {
+  display: none;
+}
+
+#directory-list.list-view {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--earth-yellow);
+}
+
+#directory-list ul {
+  padding: 1em;
+}
+
+#directory-list ul:nth-child(even) {
+  background-color: var(--wheat);
+}
+
+#directory-list ul li a {
+  color: black;
+  font-weight: bold;
+}
+
+#directory-list ul li a:hover {
+  background-color: var(--cerulean);
+  color: white;
 }

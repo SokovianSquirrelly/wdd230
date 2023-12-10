@@ -85,7 +85,12 @@
 
   /****DIRECTORY****/
 
-  #directory {
+  #directory-grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #directory-list {
+    max-width: 90%;
+    margin: 0.5em auto;
   }
 }
