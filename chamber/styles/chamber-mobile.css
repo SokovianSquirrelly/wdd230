@@ -11,6 +11,10 @@
   --earth-yellow: #eaba6b;
 }
 
+.center {
+  text-align: center;
+}
+
 a {
   text-decoration: none;
 }
@@ -80,8 +84,26 @@ ul {
   text-align: center;
 }
 
-.event-ad {
-  max-width: 90%;
+#ads-body {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.business-ad {
+  border: 1em solid var(--cerulean);
+  margin: 1em;
+  background-color: var(--wheat);
+  border-radius: 1em;
+}
+
+.business-ad img {
+  border: 0.5em solid black;
+  margin: 0.5em auto;
+}
+
+.business-ad h4 {
+  color: black;
+  margin: 1em;
 }
 
 /****DISCOVER****/

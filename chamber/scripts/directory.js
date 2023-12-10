@@ -10,7 +10,7 @@ toggleButton.addEventListener("click", () => {
 });
 
 async function getDirectoryDetails() {
-  let data = {};
+  let data = [];
 
   try {
     const response = await fetch(directoryUrl);

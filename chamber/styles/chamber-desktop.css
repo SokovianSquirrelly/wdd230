@@ -10,11 +10,11 @@
   }
 
   #ads-body {
-    display: flex;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .event-ad {
-    max-width: 500px;
+  .business-ad:hover {
+    background-color: var(--earth-yellow);
   }
 
   /****DISCOVER****/
