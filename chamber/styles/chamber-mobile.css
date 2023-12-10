@@ -214,3 +214,87 @@ textarea {
   text-align: center;
   padding-bottom: 2em;
 }
+
+/****DIRECTORY****/
+
+#directory-main h1 {
+  text-align: center;
+}
+
+.center-container {
+  display: block;
+  text-align: center;
+}
+
+#toggle-view {
+  font-family: var(--paragraph-font);
+  border: none;
+  background-color: var(--picton-blue);
+  font-weight: bold;
+  padding: 1em;
+  border-radius: 15px;
+  margin: 0.5em;
+}
+
+#toggle-view::before {
+  content: "Show List View";
+}
+
+#toggle-view.list-view::before {
+  content: "Show Grid View";
+}
+
+#directory {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.business-section {
+  border: 1em solid var(--picton-blue);
+  width: 85%;
+  margin: 1em auto;
+  background-color: var(--wheat);
+}
+
+.business-section img {
+  border: 2px solid black;
+  margin: 0.25em auto;
+}
+
+.business-section a {
+  display: block;
+  text-align: center;
+  font-size: 1.75em;
+  color: black;
+  margin: 0.5em;
+}
+
+.business-section button {
+  border: none;
+  font-family: var(--paragraph-font);
+  background-color: var(--cerulean);
+  color: white;
+  padding: 0.5em;
+  border-radius: 7px;
+  margin: 0.5em;
+}
+
+.business-section button::before {
+  content: "Show Details";
+}
+
+.business-section button.showing-details::before {
+  content: "Hide Details";
+}
+
+.business-section ul {
+  display: none;
+}
+
+.business-section ul.showing-details {
+  display: block;
+}
+
+.business-section ul li {
+  margin: 0.5em;
+}

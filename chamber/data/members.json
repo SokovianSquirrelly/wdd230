@@ -1,0 +1,58 @@
+[
+    {
+        "businessName" : "Haunted River",
+        "businessAddress" : "3418 E 530 N, Menan, ID 83434",
+        "phoneNumber" : "(509)731-3283",
+        "websiteURL" : "https://thehauntedriver.com/",
+        "imageSource" : "images/the-haunted-river.webp",
+        "membershipLevel" : "Gold"
+    },
+    {
+        "businessName" : "The Church of Jesus Christ of Latter-day Saints",
+        "businessAddress" : "101 Main St, Lewisville, ID 83431",
+        "phoneNumber" : "(208)754-0483",
+        "websiteURL" : "https://local.churchofjesuschrist.org/en/us/id/lewisville",
+        "imageSource" : "images/lewisville-lds-church.webp",
+        "membershipLevel" : "NP"
+    },
+    {
+        "businessName" : "Lewisville Legacy Library",
+        "businessAddress" : "3453 E 480 N, Lewisville, ID 83431",
+        "phoneNumber" : "(208)754-8608",
+        "websiteURL" : "https://lewisville.lili.org/",
+        "imageSource" : "images/lewisville-public-library.webp",
+        "membershipLevel" : "NP"
+    },
+    {
+        "businessName" : "Lewisville Community Center",
+        "businessAddress" : "3451 E 480 N, Lewisville, ID 83431",
+        "phoneNumber" : "(208)709-3525",
+        "websiteURL" : "http://www.cityoflewisville.org/contact-lewisville.php",
+        "imageSource" : "images/lewisville-community-center.webp",
+        "membershipLevel" : "Bronze"
+    },
+    {
+        "businessName" : "Olie & Evie Quilt Shop",
+        "businessAddress" : "448 N 3300 E, Lewisville, ID 83431",
+        "phoneNumber" : "(801)828-8928",
+        "websiteURL" : "https://www.olieandevie.com/",
+        "imageSource" : "images/quilt-shop.webp",
+        "membershipLevel" : "Silver"
+    },
+    {
+        "businessName" : "Idahoan Foods",
+        "businessAddress" : "529 N 3500 E, Lewisville, ID 83431",
+        "phoneNumber" : "(208)555-5555",
+        "websiteURL" : "https://idahoan.com/",
+        "imageSource" : "images/idahoan-foods.webp",
+        "membershipLevel" : "Silver"
+    },
+    {
+        "businessName" : "Fox Webstores",
+        "businessAddress" : "3467 E 480 N, Lewisville, ID 83431",
+        "phoneNumber" : "(208)561-0259",
+        "websiteURL" : "https://www.google.com/maps/place/Fox+Webstores/@43.6959478,-112.0123945,631m/data=!3m2!1e3!4b1!4m6!3m5!1s0x53546ba7d686e695:0xd7e8e3d5d2459cc2!8m2!3d43.695944!4d-112.0098196!16s%2Fg%2F1tgx6873?entry=ttu",
+        "imageSource" : "images/fox-webstores.webp",
+        "membershipLevel" : "Gold"
+    }
+]

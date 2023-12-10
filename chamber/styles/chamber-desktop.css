@@ -54,6 +54,7 @@
   }
 
   /****JOIN****/
+
   #join-main {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -80,5 +81,11 @@
 
   #info-button {
     display: none;
+  }
+
+  /****DIRECTORY****/
+
+  #directory {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
