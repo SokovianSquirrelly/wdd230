@@ -84,6 +84,22 @@ ul {
   text-align: center;
 }
 
+#forecast {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#forecast section {
+  border: 0.5em solid var(--cerulean);
+  margin: 1em;
+  background-color: var(--vivid-sky-blue);
+  padding: 1.5em;
+}
+
+#forecast p {
+  font-weight: bold;
+}
+
 #ads-body {
   display: grid;
   grid-template-columns: 1fr;
