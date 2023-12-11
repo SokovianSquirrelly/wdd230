@@ -60,6 +60,21 @@ ul {
 
 /****HOME PAGE****/
 
+#banner {
+  text-align: center;
+  background-color: var(--earth-yellow);
+  padding: 1em;
+}
+
+#close-button {
+  background-color: transparent;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+}
+
 #hero a {
   display: block;
   margin: 1em;
